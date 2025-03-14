@@ -12,7 +12,7 @@ def add_user(id): #Эта функция здесь по сути не нужн�
         cur = con.cursor()
         cur.execute(sql)
 
-bot = AsyncTeleBot("6860802226:AAG-XIz69_TxQjV1JDYrpeKiTbdvENWtEnI")
+bot = AsyncTeleBot("")
 
 def weather(): #Подключаемся к API и забираем данные
     response = requests.get("https://api.open-meteo.com/v1/forecast?latitude=42.98&longitude=47.50&hourly=temperature_2m")
